@@ -4,6 +4,7 @@ const GameBoard = {
         [[],[],[]],
         [[],[],[]]
         ],
+    clear: function() {return this.board.forEach(row => row.forEach(cell => cell = ''));}
 
 };
 
@@ -36,3 +37,4 @@ function checkWins(board) {
     }
     return '';
 }
+const suj = createPlayer('suj');
